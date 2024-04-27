@@ -12,8 +12,10 @@
             <div class="header-bar">
                 <img src="odin-lined.png" alt="Odin Logo"> ODIN
             </div>
-            <div></div>
-    </div>
+            <div class="credit">
+                Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a>
+            </div>
+        </div>
     </div>  
     <div class="right-side">
         <div class="right-top">
@@ -23,30 +25,54 @@
         </div>
         <div class="right-middle">
             <form action="#" method="get">
-                <h1>Let's do this!</h1>
-                <p>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" required>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" required>
-                </p>
-                <p>
-                    <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" id="email" required>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" required>
-                </p>
-                <p>
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" required>
-                    <label for="pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="pwd" required>
-                </p>
+                <h1 class="header">Let's do this!</h1>
+                <div class="name">
+                    <div class="splitter">
+                        <label for="first-name">
+                            <span>FIRST NAME</span>
+                        </label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="splitter">
+                        <label for="last-name">
+                            <span>LAST NAME</span>
+                        </label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="splitter">
+                        <label for="email">
+                            <span>EMAIL ADDRESS</span>
+                        </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                        <div class="splitter">
+                        <label for="phone">
+                            <span>PHONE NUMBER</span>
+                        </label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="splitter">
+                        <label for="pwd">
+                            <span>PASSWORD</span>
+                        </label>
+                        <input type="password" id="pwd" name="password" required>
+                    </div>
+                    <div class="splitter">
+                        <label for="pwd">
+                            <span>CONFIRM PASSWORD</span>
+                        </label>
+                        <input type="password" id="pwd" name="password" required>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="right-bottom">
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p class="login">Already have an account? <a href="#" class="login-link">Log in</a></p>
         </div>
     </div>
 </body>

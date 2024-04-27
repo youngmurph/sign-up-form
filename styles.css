@@ -1,4 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+
 * {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
@@ -10,10 +15,23 @@ body {
 
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('font/norse-bold-webfont.woff2') format('woff2'),
+         url('font/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+p label {
+    width: 100%;
 }
 
 .right-top > p {
@@ -22,19 +40,42 @@ body {
 }
 
 img {
-  max-height: 15vh;
+    max-height: 15vh;
 }
 
-.left-sidebar {
-    width: 35vw;
+a {
+    color: white;
+}
+
+.login-link {
+    color: #596D48;
+}
+
+.header {
+    margin-top: 15px;
+}
+
+.left-container {
+    width: 30vw;
     height: 100vh;
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     display: flex;
 }
 
+.left-sidebar {
+    text-align: center;
+}
+
+.credit {
+    color: white;
+    margin-top: 370px;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .right-side {
-    width: 65vw;
+    width: 70vw;
     height: 100vh;
     background-color: #F8F8F8;
     display: flex;
@@ -42,8 +83,8 @@ img {
 }
 
 .right-top {
-    height: 35vh;
-    max-width: 65vw;
+    height: 33vh;
+    max-width: 70vw;
     display: flex;
     font-size: 20px;
     line-height: 1.2em;
@@ -51,40 +92,67 @@ img {
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 25px;
-    margin-right: 150px;
+    margin-top: 50px;
+   /* margin-bottom: 25px; */
+    margin-right: 250px;
     margin-left: 20px;
 }
 
 .right-middle {
-    height: 30vh;
+    height: 37vh;
     background-color: white;
-    width: 65vw;
+    width: 70vw;
+    box-shadow: 1px 1px 2px #414a4c;
 }
 
 .right-bottom {
-    height: 35vh;
-    width: 65vw;
+    height: 30vh;
+    width: 70vw;
     margin-left: 40px;
     margin-top: 30px;
 }
 .header-bar {
-    width: 35vw;
+    width: 30vw;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'norsebold';
-    font-size: 60px;
+    font-size: 70px;
     color: white;
     max-height: 15vh;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 125px;
+    margin-top: 160px;
 }
 
 form {
     margin-left: 40px;
-    margin-top: 10px;
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+    max-height: 35vh;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: none;
+    margin: 5px;
+    border-color: #E5E7EB;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 0.8em;
+    color: #636363;
 }
 
 h1 {
@@ -96,7 +164,32 @@ h1 {
 button {
     color: white;
     background-color: #596D48;
-    padding: 15px;
-    border-radius: 7px;
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: none;
+}
+
+.login {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.name, .contact, .password {
+    display: flex;
+    flex-direction: row;
+}
+
+.splitter {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+span {
+    padding-left: 5px;
 }
