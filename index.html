@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="left-container">
@@ -51,7 +52,7 @@
                         <label for="phone">
                             <span>PHONE NUMBER</span>
                         </label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
                 </div>
                 <div class="password">
@@ -60,18 +61,19 @@
                             <span>PASSWORD</span>
                         </label>
                         <input type="password" id="pwd" name="password" required>
+                        <span id="incorrect"></span>
                     </div>
                     <div class="splitter">
-                        <label for="pwd">
+                        <label for="confirmpwd">
                             <span>CONFIRM PASSWORD</span>
                         </label>
-                        <input type="password" id="pwd" name="password" required>
+                        <input type="password" id="confirmpwd" name="password" required>
                     </div>
                 </div>
             </form>
         </div>
         <div class="right-bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" name="submit" value="submit" onclick="return validatePassword()">Create Account</button>
             <p class="login">Already have an account? <a href="#" class="login-link">Log in</a></p>
         </div>
     </div>
