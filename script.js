@@ -12,6 +12,7 @@ function validatePassword() {
         alert("Passwords do not match.");
         return false;
     } else {
+        wrongpwd.innerHTML = "";
         alert("You have registered successfully!")
         return true;
     }

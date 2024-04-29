@@ -114,11 +114,12 @@ a {
     margin-left: 40px;
     margin-top: 30px;
 }
+
 .header-bar {
     width: 30vw;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'norsebold';
-    font-size: 70px;
+    font-size: 6em;
     color: white;
     max-height: 15vh;
     padding: 10px;
@@ -126,6 +127,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 160px;
+    flex: 1;
 }
 
 form {
